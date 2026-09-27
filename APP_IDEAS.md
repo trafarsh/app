@@ -121,15 +121,112 @@ once you've built it (swap in your real numbers).
 
 ---
 
+## Really Useful Apps (solve real problems people have)
+
+These stand out because they have real users. An app that people actually use
+is the strongest thing you can put on a resume.
+
+### 17. Subscription & Bill Reminder
+- **Problem:** people forget free trials and pay for unused subscriptions
+- **Stack:** React Native or Next.js, PostgreSQL, email/push notifications
+- **Features:** add subscriptions, renewal reminders before charges, monthly
+  cost total, "cancel this?" suggestions for unused ones
+- **Resume bullet:** *Built a subscription tracker that sends renewal alerts
+  before charges, helping users spot and cancel unused services.*
+
+### 18. Receipt Scanner & Expense Splitter
+- **Problem:** splitting bills with roommates or friends is a hassle
+- **Stack:** Flutter or React Native, OCR (Google ML Kit / Tesseract), Firebase
+- **Features:** snap a receipt → items extracted automatically, assign items
+  to people, who-owes-who balances, settle-up reminders
+- **Resume bullet:** *Developed a mobile app using OCR to scan receipts and
+  split costs between groups, with automatic balance tracking.*
+
+### 19. Medication & Health Reminder
+- **Problem:** people (especially elderly relatives) miss medications
+- **Stack:** React Native / Flutter, local notifications, SQLite
+- **Features:** dose schedules, refill alerts, "taken" log, caregiver can see
+  if a dose was missed, large-text accessible mode
+- **Resume bullet:** *Built an accessible medication reminder app with refill
+  alerts and caregiver notifications for missed doses.*
+
+### 20. Local Community Marketplace / Tool Lending
+- **Problem:** neighbours buy tools and items they'd only use once
+- **Stack:** Next.js, PostgreSQL + PostGIS, maps API, auth
+- **Features:** list items to lend/sell/give away, search by distance,
+  borrow requests, ratings, in-app chat
+- **Resume bullet:** *Created a location-based lending marketplace with
+  geospatial search, borrow requests, and user ratings.*
+
+### 21. Grocery List & Pantry Tracker with Expiry Alerts
+- **Problem:** households waste food and buy duplicates
+- **Stack:** React Native, barcode scanner, Firebase (shared lists)
+- **Features:** scan barcodes to add items, expiry reminders, shared family
+  shopping list in real time, "what can I cook with what I have?"
+- **Resume bullet:** *Built a shared pantry app with barcode scanning and
+  expiry alerts to reduce household food waste.*
+
+### 22. Small Business Appointment Booking
+- **Problem:** barbers, tutors, and cleaners still take bookings by phone/DM
+- **Stack:** Next.js, PostgreSQL, Stripe, Twilio SMS, Google Calendar API
+- **Features:** public booking page, available time slots, deposits, SMS
+  reminders to cut no-shows, owner dashboard
+- **Resume bullet:** *Built a booking platform for small businesses with
+  online deposits and SMS reminders, deployed for a real local business.*
+- **Tip:** build this for a real local business, then mention it on your resume
+
+### 23. Student Assignment & Exam Planner
+- **Problem:** students juggle deadlines across many classes and platforms
+- **Stack:** React / Next.js, PostgreSQL, Google Calendar sync
+- **Features:** deadlines per course, auto-generated study schedule before
+  exams, grade calculator ("what do I need on the final?"), reminders
+
+### 24. Rental / Lease Document Organizer
+- **Problem:** tenants lose track of leases, deposits, and repair requests
+- **Stack:** Next.js, S3 file storage, PostgreSQL
+- **Features:** upload lease/photos, move-in condition checklist with photos
+  (proof for your deposit), rent reminders, repair request log with dates
+
+### 25. Accessibility Checker for Websites
+- **Problem:** many websites are unusable for people with disabilities
+- **Stack:** Node.js, Puppeteer/Playwright, axe-core, React
+- **Features:** enter a URL → report on contrast, missing alt text, keyboard
+  navigation problems, with plain-English fix suggestions
+- **Resume bullet:** *Built a web accessibility auditing tool using headless
+  browser automation to detect WCAG violations and suggest fixes.*
+
+### 26. Volunteer / Donation Matcher for Local Charities
+- **Problem:** charities struggle to find volunteers for specific shifts
+- **Stack:** Django or Rails, PostgreSQL, email notifications
+- **Features:** charities post shifts and needed items, volunteers sign up,
+  hour tracking with certificates (useful for students' community hours)
+- **Tip:** partner with a real charity — great talking point in interviews
+
+### 27. Browser Extension: Job Posting Saver
+- **Problem:** job seekers lose track of listings across many sites
+- **Stack:** Chrome Extension (JavaScript), backend API, React dashboard
+- **Features:** one click to save a job from LinkedIn/Indeed, auto-extract
+  title/company/salary, sync to your Job Tracker (idea #5)
+- **Resume bullet:** *Published a Chrome extension that captures job postings
+  from multiple sites into a personal tracking dashboard.*
+
+### 28. Price Drop Tracker
+- **Problem:** people overpay or miss sales
+- **Stack:** Python (scraping + scheduler), PostgreSQL, email alerts
+- **Features:** paste a product URL, price history chart, alert when price
+  drops below your target
+
+---
+
 ## Pick by Target Role
 
 | Target role          | Best picks                  |
 |----------------------|-----------------------------|
-| Frontend developer   | 1, 2, 4, 12                 |
-| Backend developer    | 6, 7, 13, 16                |
-| Full-stack developer | 5, 8, 9, 11                 |
-| Mobile developer     | 3, 10, 14                   |
-| AI / ML engineer     | 11, 13                      |
+| Frontend developer   | 1, 2, 4, 12, 25, 27         |
+| Backend developer    | 6, 7, 13, 16, 28            |
+| Full-stack developer | 5, 8, 9, 11, 20, 22, 26     |
+| Mobile developer     | 3, 10, 14, 18, 19, 21       |
+| AI / ML engineer     | 11, 13, 18                  |
 | DevOps / Cloud       | 7, 15, 16                   |
 
 ---
