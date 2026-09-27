@@ -218,16 +218,145 @@ is the strongest thing you can put on a resume.
 
 ---
 
+## Niche & Complex (stand-out projects, 2–4 months each)
+
+Few candidates build these. Each one gives you a deep technical story for
+interviews. Build a small working core first, then add features.
+
+### 29. Self-Hosted Log Search Engine (mini Elasticsearch)
+- **Niche:** developer infrastructure
+- **Stack:** Rust or Go, custom inverted index, gRPC, React UI
+- **Hard parts:** writing your own inverted index, tokenizer, and compression;
+  time-range queries; ingesting 10k+ log lines/second
+- **Resume bullet:** *Built a log search engine in Rust with a custom inverted
+  index, ingesting 50k lines/sec with sub-100ms full-text queries.*
+
+### 30. Distributed Key-Value Store with Raft
+- **Niche:** distributed systems
+- **Stack:** Go, Raft consensus (implemented yourself), Docker Compose cluster
+- **Hard parts:** leader election, log replication, surviving node crashes,
+  network-partition tests (use a chaos script to kill nodes)
+- **Resume bullet:** *Implemented a fault-tolerant distributed key-value store
+  using the Raft consensus algorithm, verified under node failures and
+  network partitions.*
+
+### 31. Multiplayer Game Server with Lag Compensation
+- **Niche:** game networking
+- **Stack:** C++/Rust/Go server, UDP, Godot or Phaser client
+- **Hard parts:** authoritative server, client-side prediction, server
+  reconciliation, interpolation, anti-cheat validation
+- **Resume bullet:** *Built an authoritative multiplayer game server over UDP
+  with client prediction and lag compensation for 64 concurrent players.*
+
+### 32. Local-First Notes App with CRDT Sync
+- **Niche:** offline-first software
+- **Stack:** TypeScript, Automerge or Yjs, SQLite (WASM), Electron or Tauri
+- **Hard parts:** works fully offline, merges edits from multiple devices
+  without conflicts, end-to-end encrypted sync server
+- **Resume bullet:** *Developed a local-first, end-to-end encrypted notes app
+  using CRDTs for conflict-free multi-device sync.*
+
+### 33. RAG Assistant for a Specific Domain
+- **Niche:** applied AI (e.g. building codes, court rulings, medical guidelines,
+  a university's course handbook)
+- **Stack:** Python, pgvector or Qdrant, an LLM API, FastAPI, React
+- **Hard parts:** PDF/table parsing, chunking strategy, hybrid search
+  (keyword + vector), reranking, citations to source pages, an evaluation set
+  measuring answer accuracy
+- **Resume bullet:** *Built a retrieval-augmented assistant over 3,000 pages of
+  building regulations with cited answers, improving answer accuracy from 62%
+  to 88% on a custom evaluation set.*
+
+### 34. Satellite / Drone Imagery Change Detector
+- **Niche:** geospatial + computer vision
+- **Stack:** Python, PyTorch, Sentinel-2 free satellite data, Leaflet map UI
+- **Hard parts:** handling multi-band images, cloud masking, detecting
+  deforestation, floods, or new construction between two dates
+- **Resume bullet:** *Trained a segmentation model on Sentinel-2 imagery to
+  detect land-use changes, with an interactive map for exploring results.*
+
+### 35. Real-Time Transit Delay Predictor
+- **Niche:** public transport data (GTFS / GTFS-Realtime feeds)
+- **Stack:** Python, Kafka or Redpanda, TimescaleDB, ML model, map UI
+- **Hard parts:** streaming live vehicle positions, predicting arrival delays,
+  handling messy real-world data
+- **Resume bullet:** *Built a streaming pipeline processing live transit feeds
+  to predict bus delays, outperforming official ETAs by 23%.*
+
+### 36. Smart Contract Security Scanner
+- **Niche:** blockchain security
+- **Stack:** Python or Rust, Solidity AST parsing, static analysis, web UI
+- **Hard parts:** detecting reentrancy, integer overflows, and access-control
+  bugs; testing against known-vulnerable contracts
+- **Resume bullet:** *Wrote a static analyzer for Solidity smart contracts
+  detecting 8 vulnerability classes, validated on 200 known-vulnerable
+  contracts.*
+
+### 37. Home Energy Optimizer (IoT)
+- **Niche:** IoT + energy
+- **Stack:** Raspberry Pi / ESP32, MQTT, InfluxDB, Grafana, Python
+- **Hard parts:** reading real sensors or smart plugs, scheduling appliances
+  when electricity prices are cheapest, forecasting usage
+- **Resume bullet:** *Built an IoT energy system using ESP32 sensors and MQTT
+  that shifts appliance use to off-peak hours, cutting a household's bill 15%.*
+
+### 38. Build Your Own Programming Language / Interpreter
+- **Niche:** compilers
+- **Stack:** Rust, C, or Go; optionally compile to WebAssembly
+- **Hard parts:** lexer, parser, type checker, garbage collector, online
+  playground that runs in the browser
+- **Resume bullet:** *Designed and implemented a statically typed programming
+  language with a bytecode VM and a browser playground via WebAssembly.*
+
+### 39. Privacy-Preserving Health Data Platform
+- **Niche:** health tech + security
+- **Stack:** Next.js, PostgreSQL row-level security, encryption at rest,
+  FHIR standard API
+- **Hard parts:** following the FHIR healthcare data standard, audit logs,
+  role-based access (patient / doctor / admin), consent management
+- **Resume bullet:** *Built a FHIR-compliant patient records platform with
+  role-based access control, full audit logging, and encrypted storage.*
+
+### 40. Algorithmic Trading Backtester
+- **Niche:** quantitative finance
+- **Stack:** Python (NumPy, Pandas) or C++, historical market data, dashboard
+- **Hard parts:** event-driven engine, realistic fees and slippage, avoiding
+  look-ahead bias, risk metrics (Sharpe ratio, max drawdown)
+- **Resume bullet:** *Built an event-driven backtesting engine modelling fees
+  and slippage, processing 10 years of minute-level data in under 30 seconds.*
+
+### 41. Code Review Bot for GitHub
+- **Niche:** developer tools + AI
+- **Stack:** TypeScript, GitHub App API, webhooks, LLM API, static analysis
+- **Hard parts:** reading PR diffs, posting inline comments, avoiding noisy
+  false positives, running at scale with a job queue
+- **Resume bullet:** *Built a GitHub App that reviews pull requests using
+  static analysis plus an LLM, installed on 30+ repositories.*
+
+### 42. Browser-Based Video Editor
+- **Niche:** media processing on the web
+- **Stack:** TypeScript, WebCodecs, FFmpeg.wasm, WebGL, Canvas
+- **Hard parts:** timeline editing, trimming, effects rendered on the GPU,
+  exporting video entirely in the browser (no server)
+- **Resume bullet:** *Built an in-browser video editor using WebCodecs and
+  WebGL with real-time preview and fully client-side export.*
+
+---
+
 ## Pick by Target Role
 
 | Target role          | Best picks                  |
 |----------------------|-----------------------------|
-| Frontend developer   | 1, 2, 4, 12, 25, 27         |
-| Backend developer    | 6, 7, 13, 16, 28            |
-| Full-stack developer | 5, 8, 9, 11, 20, 22, 26     |
-| Mobile developer     | 3, 10, 14, 18, 19, 21       |
-| AI / ML engineer     | 11, 13, 18                  |
-| DevOps / Cloud       | 7, 15, 16                   |
+| Frontend developer   | 1, 2, 4, 12, 25, 27, 42     |
+| Backend developer    | 6, 7, 13, 16, 28, 29, 30    |
+| Full-stack developer | 5, 8, 9, 11, 20, 22, 26, 39 |
+| Mobile developer     | 3, 10, 14, 18, 19, 21, 32   |
+| AI / ML engineer     | 11, 13, 18, 33, 34, 35      |
+| DevOps / Cloud       | 7, 15, 16, 29, 41           |
+| Systems / Low-level  | 30, 31, 38                  |
+| Security             | 36, 39                      |
+| Quant / Fintech      | 13, 40                      |
+| Embedded / IoT       | 37                          |
 
 ---
 
